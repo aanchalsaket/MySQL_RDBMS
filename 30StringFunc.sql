@@ -19,6 +19,18 @@ from student;
 SELECT id, name, length(name) as Characters, percentage
 from student;
 
-SELECT id, name, concat(name, percentage) as Namme, percentage
+SELECT id, name, concat(name, percentage) as Name, percentage
 from student;
+
+SELECT id, name, concat(name, " - ", percentage) as Name, percentage
+from student;
+
+SELECT id, name, concat(name, " - ", percentage, " - ", city) as Name, percentage
+from student;
+
+SELECT concat("My", "name", "is", "Aanchal", "Saket.") as intro;
+
+SELECT concat_ws("-", "My", "name", "is", "Aanchal", "Saket.") as intro;
+
+SELECT concat_ws(" ", "My", "name", "is", "Aanchal", "Saket.") as intro;
 
