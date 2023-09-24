@@ -40,5 +40,16 @@ SELECT rtrim("                     Aanchal Saket                   ") as name;
 
 SELECT trim("                     Aanchal Saket                   ") as name;
 
+SELECT position("Aanchal" in "      Aanchal Saket       Aanchal") as name;
+
+SELECT instr("      Aanchal Saket       Aanchal", "Aanchal" ) as name;
+
+SELECT locate("Aanchal", "      Aanchal Saket       Aanchal", 8) as name;
+
+
+
+
+
+
 
 
