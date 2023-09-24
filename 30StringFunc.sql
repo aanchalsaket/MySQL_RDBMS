@@ -76,7 +76,17 @@ SELECT reverse("abcd") as reverse;
 
 SELECT replace("Akira wish", "wish", "Akira");
 
+SELECT strcmp("Akira", "akira"); -- L = R --> 0
+SELECT strcmp("Akira", "akira yo yo"); -- R > L --> -1
+SELECT strcmp("akira yo yo", "Akira"); -- L > R --> 1
 
+SELECT field("a", "X", "a", "k") as field;
+SELECT field("a", "X", "A", "k") as field;
+SELECT field("x", "X", "A", "k") as field;
+SELECT field(5, 0, 1, 2, 3, 4, 5) as field;
+SELECT field("ram", "ramesh", "ram", "ggits") as field;
+
+SELECT find_in_set("ram", "ram,mohan,shyam") as sets; -- dont use space
 
 
 
