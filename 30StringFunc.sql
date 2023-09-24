@@ -88,6 +88,10 @@ SELECT field("ram", "ramesh", "ram", "ggits") as field;
 
 SELECT find_in_set("ram", "ram,mohan,shyam") as sets; -- dont use space
 
+SELECT format(255.35678, 3) as Value;
+
+SELECT hex("Akira yo yo") as hexadeciamal;
+
 
 
 
