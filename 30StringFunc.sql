@@ -34,3 +34,11 @@ SELECT concat_ws("-", "My", "name", "is", "Aanchal", "Saket.") as intro;
 
 SELECT concat_ws(" ", "My", "name", "is", "Aanchal", "Saket.") as intro;
 
+SELECT ltrim("                     Aanchal Saket                   ") as name;
+
+SELECT rtrim("                     Aanchal Saket                   ") as name;
+
+SELECT trim("                     Aanchal Saket                   ") as name;
+
+
+
