@@ -46,6 +46,37 @@ SELECT instr("      Aanchal Saket       Aanchal", "Aanchal" ) as name;
 
 SELECT locate("Aanchal", "      Aanchal Saket       Aanchal", 8) as name;
 
+-- ----------------------------------------------------------------------------------
+
+SELECT substring("Aanchal Saket", 3);
+
+SELECT substring("Aanchal Saket", 3, 8);
+
+SELECT substring("Aanchal Saket", -3, 2);
+
+SELECT substr("Aanchal Saket", -3, 2);
+
+SELECT mid("Aanchal Saket", -3, 2);
+
+SELECT substring_index("Aanchal.Saket.234", ".", 2);
+
+SELECT substring_index("Aanchal.Saket.234", "a", 3);
+
+SELECT left("Aanchal.Saket.234",3);
+
+SELECT right("Aanchal.Saket.234",3);
+
+SELECT RPAD("Aanchal.Saket.234", 250, ' a') as name;
+
+SELECT LPAD("Aanchal.Saket.234", 25, ' ') as name;
+
+SELECT space(100);
+
+SELECT reverse("abcd") as reverse;
+
+SELECT replace("Akira wish", "wish", "Akira");
+
+
 
 
 
