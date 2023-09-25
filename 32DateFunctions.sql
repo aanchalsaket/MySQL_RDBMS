@@ -78,6 +78,32 @@ SELECT subdate("2019-06-15", interval 24 hour) as Date;
 SELECT subdate("2019-06-15", interval 500 minute) as Date;
 SELECT subdate("2019-06-15", interval 5000 second) as Date;
 
+SELECT datediff("2019-06-15","2019-05-15") as difference;
+SELECT datediff("2019-06-15","2018-06-15") as difference;
+
+SELECT to_days("2019-06-15") as date;
+
+SELECT DATE("2019-06-15") AS date;
+
+SELECT PERIOD_ADD(202309, 5) as date;
+
+SELECT PERIOD_DIFF(202309, 202402) AS date;
+
+SELECT date_format("2019-06-15", "%Y") as date;
+
+SELECT date_format("2019-06-15", "%d/%b/%Y") as date;
+SELECT date_format("2019-06-15", "%d-%c-%Y") as date;
+SELECT date_format("2019-06-15", "%d-%c-%y, %W") as date;
+SELECT date_format("2019-06-15 02:30:45:20", "%d-%c-%y, %h:%i") as date;
+
+SELECT str_to_date("July 10 2019", "%M %d %Y") as date;
+
+
+
+
+
+
+
 
 
 
