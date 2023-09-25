@@ -67,6 +67,18 @@ SELECT date_add("2019-06-15", interval 24 hour) as nextDate;
 SELECT date_add("2019-06-15", interval 500 minute) as nextDate;
 SELECT date_add("2019-06-15", interval 5000 second) as nextDate;
 
+SELECT makedate(2019, 3);
+
+SELECT subdate("2019-06-15", interval 1 day) as yesterday;
+SELECT subdate("2019-06-15", interval 1 week) as Date;
+SELECT subdate("2019-06-15", interval 1 month) as Date;
+SELECT subdate("2019-06-15", interval 1 year) as Date;
+SELECT subdate("2019-06-15", interval 1 quarter) as Date;
+SELECT subdate("2019-06-15", interval 24 hour) as Date;
+SELECT subdate("2019-06-15", interval 500 minute) as Date;
+SELECT subdate("2019-06-15", interval 5000 second) as Date;
+
+
 
 
 
