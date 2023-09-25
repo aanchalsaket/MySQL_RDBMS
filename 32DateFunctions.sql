@@ -37,7 +37,15 @@ SELECT yearweek("2019-03-15 09:34:21") as week;
 
 SELECT last_day("2019-02-16 09:34:21") as date;
 
-SELECT extract(month from "2019-03-16 09:34:21") as week;
+SELECT extract(month from "2019-03-16 09:34:21") as month;
+SELECT extract(day from "2019-03-16 09:34:21") as day;
+SELECT extract(year from "2019-03-16 09:34:21") as year;
+SELECT extract(week from "2019-03-16 09:34:21") as week;
+SELECT extract(hour from "2019-03-16 09:34:21") as hour;
+SELECT extract(minute from "2019-03-16 09:34:21") as minute;
+SELECT extract(second from "2019-03-16 09:34:21") as second;
+SELECT extract(microsecond from "2019-03-16 09:34:21") as microsecond;
+SELECT extract(hour_minute from "2019-03-16 09:34:21") as hourminute;
 
 
 
