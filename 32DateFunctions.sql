@@ -47,6 +47,30 @@ SELECT extract(second from "2019-03-16 09:34:21") as second;
 SELECT extract(microsecond from "2019-03-16 09:34:21") as microsecond;
 SELECT extract(hour_minute from "2019-03-16 09:34:21") as hourminute;
 
+-- ------------------------------------------------------------------------------------
+
+SELECT adddate("2019-06-15", interval 10 day) as nextDate;
+SELECT adddate("2019-06-15", interval 1 week) as nextDate;
+SELECT adddate("2019-06-15", interval 1 month) as nextDate;
+SELECT adddate("2019-06-15", interval 1 year) as nextDate;
+SELECT adddate("2019-06-15", interval 1 quarter) as nextDate;
+SELECT adddate("2019-06-15", interval 24 hour) as nextDate;
+SELECT adddate("2019-06-15", interval 500 minute) as nextDate;
+SELECT adddate("2019-06-15", interval 5000 second) as nextDate;
+
+SELECT date_add("2019-06-15", interval 10 day) as nextDate;
+SELECT date_add("2019-06-15", interval 1 week) as nextDate;
+SELECT date_add("2019-06-15", interval 1 month) as nextDate;
+SELECT date_add("2019-06-15", interval 1 year) as nextDate;
+SELECT date_add("2019-06-15", interval 1 quarter) as nextDate;
+SELECT date_add("2019-06-15", interval 24 hour) as nextDate;
+SELECT date_add("2019-06-15", interval 500 minute) as nextDate;
+SELECT date_add("2019-06-15", interval 5000 second) as nextDate;
+
+
+
+
+
 
 
 
