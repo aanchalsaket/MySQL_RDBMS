@@ -24,5 +24,8 @@ ON s.city = ci.cid;
 
 SELECT * FROM studentData;
 
+-- rename views
+RENAME TABLE studentData 
+TO studentsDetail;
 
-
+SELECT * FROM studentsDetail;
