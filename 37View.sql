@@ -29,3 +29,6 @@ RENAME TABLE studentData
 TO studentsDetail;
 
 SELECT * FROM studentsDetail;
+
+-- delete view
+DROP VIEW studentsDetail;
